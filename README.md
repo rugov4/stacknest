@@ -1,19 +1,20 @@
-# Stacknest Thumbnail Generator
+# YouTube Thumbnail Generator
 
-A powerful thumbnail generator for content creators, featuring YouTube integration, AI-powered suggestions, and advanced editing capabilities.
+A web application for creating and editing YouTube thumbnails with text overlays and drawing capabilities.
 
-## Setup Instructions
+## Features
 
-### Prerequisites
-- Node.js (v18 or later)
-- Git
-- npm (comes with Node.js)
+- Upload images or use YouTube video thumbnails
+- Add and edit text overlays
+- Free-form drawing tools
+- Multiple text customization options
+- Download edited thumbnails
 
-### Installation Steps
+## Getting Started
 
 1. Clone the repository:
 ```bash
-git clone [YOUR_GITHUB_REPO_URL]
+git clone https://github.com/rugov4/stacknest.git
 cd thumbnail-generator
 ```
 
@@ -22,45 +23,20 @@ cd thumbnail-generator
 npm install
 ```
 
-3. Start the development server:
+3. Run the development server:
 ```bash
 npm run dev
 ```
 
-4. Open your browser and visit:
-- http://localhost:3000 or
-- http://localhost:3001 (if port 3000 is in use)
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Features
-- Drag and drop image upload
-- YouTube thumbnail extraction
-- Text overlay with customization
-- AI-powered content suggestions
-- Template system
+## Technologies Used
 
-## Development
-The project uses:
-- Next.js 13+ with App Router
+- Next.js 13
 - TypeScript
 - Tailwind CSS
-- React Dropzone
-- Canvas API for image manipulation
-
-## Project Structure
-```
-src/
-  ├── app/              # Next.js app router
-  ├── components/       # React components
-  │   ├── FileUpload.tsx
-  │   └── ImageEditor.tsx
-  └── utils/           # Utility functions
-      └── youtube.ts
-```
-
-## Contributing
-1. Create a branch for your feature
-2. Make your changes
-3. Submit a pull request
+- HTML Canvas API
 
 ## License
-MIT
+
+MIT License
