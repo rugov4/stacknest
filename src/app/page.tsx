@@ -7,7 +7,6 @@ import ImageEditor from '@/components/ImageEditor';
 import { extractYouTubeVideoId, getYouTubeThumbnailUrls } from '@/utils/youtube';
 
 export default function Home() {
-  const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [filePreview, setFilePreview] = useState<string | null>(null);
   const [youtubeUrl, setYoutubeUrl] = useState('');
   const [thumbnails, setThumbnails] = useState<string[]>([]);
@@ -16,7 +15,6 @@ export default function Home() {
   const [editedImage, setEditedImage] = useState<string | null>(null);
 
   const handleFileSelect = useCallback((file: File) => {
-    setSelectedFile(file);
     setThumbnails([]); // Clear YouTube thumbnails
     setSelectedThumbnail(null);
     
